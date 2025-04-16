@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: zan_zevent
+    database: zan_dev
+    schema: zevent
+    tables:
+      - name: event_visit_campaign
+        description: ZAN events ( Visit & Campaign)
+        config:
+          event_time: timestamp
+        columns:
+          - name: timestamp
+            description: Timestamp in UTC
+          - name: timestamp_pst
+            description: Timestamp in PST
+          - name: account_id
+            description: Advertiser ID
+          - name: placement_id
+            description:  Placement ID
+          - name: publisher_id
+            description: Publisher ID
+          - name: event_type
+            description: Name of the Event based on ZAN Topic
+          - name: revenue
+            description: Revenue
+          - name: rev_share
+            description: Revenue Share
