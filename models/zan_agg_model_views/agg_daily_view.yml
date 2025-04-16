@@ -1,0 +1,31 @@
+models:
+  - name: agg_daily_view
+    columns:
+      - name: date
+        description: Day in PST
+      - name: account_id
+        description: Advertiser ID
+      - name: campaign_id
+        description: Campaign ID
+      - name: placement_id
+        description: Placement ID
+      - name: publisher_id
+        description: Publisher ID
+      - name: clicks
+        description: Total Clicks
+      - name: impressions
+        description: Total Impressions
+      - name: recommendations
+        description: Total Recommendations
+      - name: conversions
+        description: Total Conversions
+      - name: advertiser_cost
+        description: Advertiser Cost ( Total Revenue)
+      - name: zeeto_revenue
+        description: Advertiser Cost - Publisher revenue
+      - name: leads_accepted
+        description: Total Leads Accepted
+      - name: leads_rejected
+        description: Total Leads Rejected
+      - name: delivery_count
+        description: Total Leads (Accepted, Rejected, Failed)

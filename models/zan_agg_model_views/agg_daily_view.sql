@@ -10,7 +10,6 @@ SELECT
                     ,campaign_id
                     ,placement_id
                     ,publisher_id
-                    ,my_custom_calc
                     ,SUM(CASE WHEN event_type = 'campaign_clicked' AND (do_not_track != TRUE OR do_not_track IS NULL) THEN 1 ELSE 0 END) clicks
                     ,SUM(CASE WHEN event_type = 'campaign_impressed' AND (do_not_track != TRUE OR do_not_track IS NULL) THEN 1 ELSE 0 END) impressions
                     ,SUM(CASE WHEN event_type = 'campaign_recommended' AND (do_not_track != TRUE OR do_not_track IS NULL) THEN 1 ELSE 0 END) recommendations
